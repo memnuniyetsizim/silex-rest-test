@@ -1,0 +1,34 @@
+{
+    "name": "memnuniyetsizim/rest-test",
+    "description": "Rest example with silex fw",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.9",
+        "silex/silex": "~1.1",
+        "symfony/class-loader": "~2.6",
+        "symfony/config": "~2.6",
+        "symfony/console": "~2.6",
+        "symfony/monolog-bridge": "~2.6",
+        "doctrine/dbal": "~2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8",
+        "codeception/codeception": "*",
+        "mockery/mockery": "~0.9.4"
+    },
+    "authors": [
+        {
+            "name": "Mehmet Ali Ergut",
+            "email": "mim@taximact.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "": "src/" }
+    },
+    "scripts": {
+        "run": [
+            "echo 'Started web server on http://localhost:8888'",
+            "php -S localhost:8888 -t web web/index_dev.php"
+        ]
+    }
+}
