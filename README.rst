@@ -12,10 +12,13 @@ Sample Curl Requests
 ====================
 
 // Get token
-curl -X GET http://127.0.0.1:8888/api/login -H 'Content-Type: application/json' -w "\n"
+`curl -X GET http://127.0.0.1:8888/api/login -H 'Content-Type: application/json' -w "\n"`
 
-curl -X GET http://127.0.0.1:8888/api/user -d '{"token":""}' -H 'Content-Type: application/json' -w "\n"
-curl -X POST http://127.0.0.1:8888/api/user -d '{"token":"","username":"cukubik","description":"naber"}' -H 'Content-Type: application/json' -w "\n"
-curl -X PUT http://127.0.0.1:8888/api/user/4 -d '{"token":"","username":"3cukubik","description":"11111naber"}' -H 'Content-Type: application/json' -w "\n"
-curl -X DELETE http://127.0.0.1:8888/api/user/4 -d '{"token":""}' -H 'Content-Type: application/json' -w "\n"
+`curl -X GET http://127.0.0.1:8888/api/user -d '{"token":""}' -H 'Content-Type: application/json' -w "\n"`
+
+`curl -X POST http://127.0.0.1:8888/api/user -d '{"token":"","username":"cukubik","description":"naber"}' -H 'Content-Type: application/json' -w "\n"`
+
+`curl -X PUT http://127.0.0.1:8888/api/user/4 -d '{"token":"","username":"3cukubik","description":"11111naber"}' -H 'Content-Type: application/json' -w "\n"`
+
+`curl -X DELETE http://127.0.0.1:8888/api/user/4 -d '{"token":""}' -H 'Content-Type: application/json' -w "\n"`
 
